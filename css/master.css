@@ -1,0 +1,74 @@
+body{
+  background-color: #F0F0F0;
+}
+
+main{
+  margin-top:20px;
+}
+
+.progress-bar-striped,.progress{
+  height: 8px;
+}
+
+.shadowed{
+  box-shadow: 0px 2px 2px grey;
+}
+
+.title{
+  color: #00bfa5;
+}
+
+.card-panel{
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px grey;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #00BCD4;
+  background-color: #FFFFFF;
+}
+
+.description{
+  background-color:#455A64;
+  font-size: 1.1rem;
+}
+
+.description a{
+  color:#00e5ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.description a:hover{
+  color:white;
+  font-weight: bold;
+}
+
+.description p{
+  text-indent: 15px;
+  text-align: justify;
+}
+
+.description ul{
+  list-style-type: none;
+  list-style: none;
+  padding-left: 0;
+}
+
+.corpus{
+    font-size: 1.1rem;
+}
+.corpus ul{
+  list-style-type: none;
+}
+
+.card-panel {
+  -webkit-transition:  box-shadow  400ms ease;
+  -moz-transition:  box-shadow  400ms ease;
+  -ms-transition:  box-shadow  400ms ease;
+  -o-transition:  box-shadow  400ms ease;
+  transition:  box-shadow  400ms ease;
+}
+
+.card-panel:hover {
+  box-shadow: 0px 6px 6px grey;
+}
