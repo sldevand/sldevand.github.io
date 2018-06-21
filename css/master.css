@@ -6,9 +6,7 @@ main{
   margin-top:20px;
 }
 
-.stage-dates{
-  color: #ffb74d;
-}
+
 
 .progress-bar-striped,.progress{
   height: 8px;
@@ -22,7 +20,9 @@ main{
   color: #00bfa5;
 }
 
-
+.stage-dates {
+  color: #ffb74d;
+}
 .card-panel{
   border-radius: 2px;
   box-shadow: 0px 2px 2px grey;
