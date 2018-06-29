@@ -1,85 +1,97 @@
-body{
-  background-color: #F0F0F0;
+:root {
+  --primary: #455a64;
+  --secondary: #00bfa5;
+  --border-left : 5px solid #00BCD4;
+  --anchor :#00e5ff;
+  --body-background : #F0F0F0;
+  --shadow : 0px 2px 2px grey;
 }
 
-main{
-  margin-top:20px;
+body {
+  background-color: var(--body-background);
 }
 
-
-
-.progress-bar-striped,.progress{
-  height: 8px;
+#cv{
+  display: none;
 }
 
-.shadowed{
-  box-shadow: 0px 2px 2px grey;
+main {
+  margin-top: 20px;
 }
 
-.title{
-  color: #00bfa5;
+.progress-bar-striped, .progress {
+  height: 10px;
 }
 
-.stage-dates {
-  color: #ffb74d;
+.title {
+  color: var(--secondary);
 }
-.card-panel{
+
+.card-panel {
   border-radius: 2px;
-  box-shadow: 0px 2px 2px grey;
+  box-shadow: var(--shadow);
   padding: 15px;
   margin-bottom: 15px;
-  border-left: 5px solid #00BCD4;
-  background-color: #FFFFFF;
+  border-left: var(--border-left);
+  background-color: white;
 }
 
-.description{
-  background-color:#455A64;
+.description {
+  background-color: var(--primary);
   font-size: 1.1rem;
 }
 
-.description a{
-  color:#00e5ff;
-  font-weight: bold;
+.description a {
+  color: var(--anchor);
+
   text-decoration: none;
 }
 
-.description a:hover{
-  color:white;
-  font-weight: bold;
+.description a:hover {
+  color: white;
 }
 
-.description p{
-  text-indent: 15px;
+.description p {
   text-align: justify;
 }
 
-.description ul{
+.description ul {
   list-style-type: none;
   list-style: none;
   padding-left: 0;
 }
 
-.corpus{
-    font-size: 1.1rem;
+.corpus {
+  font-size: 1.1rem;
 }
-.corpus ul{
+
+.corpus ul {
   list-style-type: none;
 }
 
 .card-panel {
-  -webkit-transition:  box-shadow  400ms ease;
-  -moz-transition:  box-shadow  400ms ease;
-  -ms-transition:  box-shadow  400ms ease;
-  -o-transition:  box-shadow  400ms ease;
-  transition:  box-shadow  400ms ease;
+  -webkit-transition: box-shadow 400ms ease;
+  -moz-transition: box-shadow 400ms ease;
+  -ms-transition: box-shadow 400ms ease;
+  -o-transition: box-shadow 400ms ease;
+  transition: box-shadow 400ms ease;
 }
 
 .card-panel:hover {
   box-shadow: 0px 6px 6px grey;
 }
 
-@media print{
-  body{
+@media print {
+  body {
     background-color: white;
   }
+
+  #cv{
+    display: block;
+  }
+
+  #pdf{
+    display: none;
+  }
+  
 }
