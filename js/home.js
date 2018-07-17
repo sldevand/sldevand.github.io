@@ -1,5 +1,6 @@
-(function() {
-
+document.addEventListener('DOMContentLoaded',function(){
+  makeProgressBars();
+  
   function makeProgressBar(value,id){
 
     var selector = "#"+id;
@@ -24,5 +25,6 @@
       makeProgressBar(50,"nosql");
       makeProgressBar(65,"cpp");
   }
-  makeProgressBars();
-})();
+
+
+});
