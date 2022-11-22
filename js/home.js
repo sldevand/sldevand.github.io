@@ -17,14 +17,10 @@ document.addEventListener('DOMContentLoaded',function(){
 
   function makeProgressBars(){
 
-      makeProgressBar(80,"java");
-      makeProgressBar(70,"web");
-      makeProgressBar(85,"php");
-      makeProgressBar(70,"sql");
-      makeProgressBar(85,"android");
-      makeProgressBar(50,"nosql");
-      makeProgressBar(65,"cpp");
+      makeProgressBar(80,"web");
+      makeProgressBar(80,"php");
+      makeProgressBar(80,"sql");
+      makeProgressBar(65,"android");
+      makeProgressBar(50,"cpp");
   }
-
-
 });
