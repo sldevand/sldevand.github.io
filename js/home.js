@@ -1,26 +1,21 @@
-document.addEventListener('DOMContentLoaded',function(){
-  makeProgressBars();
-  
-  function makeProgressBar(value,id){
-
-    var selector = "#"+id;
-    var pb = document.querySelector(selector);
-
-    if(pb != null){
-    pb.innerHTML='<div class="progress">'+
-        '<div class="progress-bar  progress-bar-striped active" role="progressbar"  aria-valuenow="'+value+'"'+
-        'aria-valuemin="0" aria-valuemax="100" style="width:'+value+'%">'+
-    '</div>'+
-  '</div>';
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  let progressBars = document.getElementsByClassName("pb");
+  for (let progressBar of progressBars) {
+    makeProgressBar(progressBar.dataset.percent, progressBar.id);
   }
 
-  function makeProgressBars(){
+  function makeProgressBar(value, id) {
+    const selector = "#" + id;
+    let pb = document.querySelector(selector);
+    if (!pb) {
+      return;
+    }
 
-      makeProgressBar(80,"web");
-      makeProgressBar(80,"php");
-      makeProgressBar(80,"sql");
-      makeProgressBar(65,"android");
-      makeProgressBar(50,"cpp");
+    const template = document.querySelector("#progress-bar-template");
+    const clone = template.content.cloneNode(true);
+    let stripedProgressBar = clone.querySelector(".progress-bar");
+    stripedProgressBar.setAttribute("aria-valuenow", value);
+    stripedProgressBar.style = "width:" + value + "%;";
+    pb.appendChild(clone);
   }
 });
